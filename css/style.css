@@ -1,0 +1,316 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+
+
+/*-------GLOBAL-----------------*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+h1 {
+    font-size: 80px;
+    line-height: 1;
+    white-space: 5px;
+}
+
+
+h2 {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+
+}
+
+h3 {
+    margin: 0;
+}
+
+.large,
+.small {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+.flaticon-pin {
+    display: block;
+    text-align: center;
+}
+
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*-------ABOUT-----------------*/
+.about-section {
+    background-color: #2F3061;
+    color: #F7FFF7;
+    margin-top: -24px;
+
+}
+
+.anime {
+    animation: moveInleft 2s ease-out;
+}
+
+
+.about-section p>a {
+    color: #FFE66D;
+}
+
+.about-section p>a:hover {
+    text-decoration: none;
+    transition: all .1s;
+}
+
+
+/*-------PROJECT-----------------*/
+.project {
+    background-color: #F7FFF7;
+}
+
+.project h3 {
+    font-weight: 500;
+}
+
+.project p>a {
+    color: #FFE66D;
+}
+
+.project p>a:hover {
+    text-decoration: none;
+}
+
+.project img {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    position: relative;
+    transition: all .4s;
+
+}
+
+button {
+    padding: 8px;
+    background-color: #2F3061;
+    border-radius: 5px;
+}
+
+button a {
+    color: #F7FFF7;
+    text-decoration: none;
+    font-size: 16px
+}
+
+button:hover {
+    background-color: rgba(47, 48, 97, 0.794);
+    transition: all .2s;
+
+
+}
+
+
+
+
+
+/*-------WORK-EXPRIENCE-----------------*/
+.work {
+    background-color: #A1C6D7;
+}
+
+.work p a {
+    color: rgb(251, 223, 79);
+
+}
+
+.work p a:hover {
+    text-decoration: none;
+
+}
+
+
+
+/*-------EDUCATION-----------------*/
+.education {
+    background-image: url(../images/books-bg.jpg);
+    background-position: top right;
+    background-position: cover;
+
+}
+
+.education p {
+    margin: 0;
+    line-height: 2;
+
+}
+
+.education h3 {
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-top: 12px;
+}
+
+
+
+/*-------FOOTER-----------------*/
+footer {
+    background-color: #708090;
+    overflow: hidden;
+    color: #fff;
+    padding-bottom: 20px;
+
+}
+
+footer h2 {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+
+
+.connect {
+    display: flex;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+a img {
+    width: 20px;
+    padding: 8px;
+}
+
+
+.connect a {
+    text-decoration: none;
+
+}
+
+
+address {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 12px;
+
+}
+
+@media screen and (min-width:750px) {
+    img {
+        float: left;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .small {
+        display: none;
+    }
+
+}
+
+@media (max-width:749px) {
+
+    .large {
+        display: none;
+    }
+
+    .about-section h1 {
+        font-size: 50px;
+
+    }
+
+    .zailani,
+    .student {
+        margin-bottom: 8px;
+    }
+
+    .about-section h3 {
+        font-size: 28px;
+        font-weight: 450;
+        font-family: 'Caveat', cursive;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .education {
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+
+}
